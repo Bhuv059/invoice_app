@@ -1,0 +1,41 @@
+{
+  "version": "7",
+  "dialect": "postgresql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "7",
+      "when": 1733627661330,
+      "tag": "0000_milky_lethal_legion",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "7",
+      "when": 1734805201125,
+      "tag": "0001_omniscient_unus",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1734806018199,
+      "tag": "0002_fluffy_ezekiel_stane",
+      "breakpoints": true
+    },
+    {
+      "idx": 3,
+      "version": "7",
+      "when": 1735072054604,
+      "tag": "0003_premium_wong",
+      "breakpoints": true
+    },
+    {
+      "idx": 4,
+      "version": "7",
+      "when": 1735150682191,
+      "tag": "0004_brown_blob",
+      "breakpoints": true
+    }
+  ]
+}

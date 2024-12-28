@@ -1,0 +1,1 @@
+ALTER TABLE "invoices" ALTER COLUMN "userId" SET NOT NULL;
