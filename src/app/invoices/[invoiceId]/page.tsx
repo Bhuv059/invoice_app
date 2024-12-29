@@ -14,12 +14,14 @@ export default async function InvoicePage({
 }) {
  */
 
-export type paramsType = Promise<{ invoiceId: string }>;
+interface InvoicePageProps {
+  params: { invoiceId: string };
+}
 
-export default async function InvoicePage(params: { params: paramsType }) {
-  //const { id } = await props.params;
+export default async function InvoicePage({ params }: InvoicePageProps) {
+  const id = Number.parseInt(params.invoiceId);
 
-  const id = Number.parseInt((await params.params).invoiceId);
+  //const id = Number.parseInt((await params.params).invoiceId);
 
   console.log("id", typeof id);
 
