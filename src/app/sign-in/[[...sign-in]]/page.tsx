@@ -3,7 +3,6 @@
 import { Button } from "@/components/ui/button";
 import * as Clerk from "@clerk/elements/common";
 import * as SignIn from "@clerk/elements/sign-in";
-import { SignInButton } from "@clerk/nextjs";
 import Link from "next/link";
 import { AnimatePresence, motion } from "framer-motion";
 
