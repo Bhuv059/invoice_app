@@ -6,17 +6,29 @@ import { auth } from "@clerk/nextjs/server";
 import { notFound } from "next/navigation";
 
 import Invoice from "./Invoice";
+/* 
 export default async function InvoicePage({
-  params,
+  params
 }: {
-  params: { invoiceId: string };
+  params: { invoiceId: string }
 }) {
+ */
+
+export type paramsType = Promise<{ invoiceId: string }>;
+
+export default async function InvoicePage(params: { params: paramsType }) {
+  //const { id } = await props.params;
+
+  const id = Number.parseInt((await params.params).invoiceId);
+
+  console.log("id", typeof id);
+
   const { userId, orgId } = await auth();
   if (!userId) return;
-  const invoiceId = await parseInt(params.invoiceId);
+  const invoiceId = await id;
 
   if (isNaN(invoiceId)) {
-    throw new Error("Invalid Invoice ID:  " + params.invoiceId);
+    throw new Error("Invalid Invoice ID:  " + id);
   }
 
   let result;
